@@ -47,11 +47,23 @@
           text-decoration: none;
         }
         #description {
-            padding-top: 10%;
-            color: white;
-            text-align: center;
+          padding-top: 10%;
+          color: white;
+          text-align: center;
         }
     </style>
+    <script type="application/ld+json">
+		{
+		  "@context": "http://schema.org/",
+		  "@type": "Person",
+		  "name": "Ihor Pavlenko",
+			"email": "info@pavlenko.ninja",
+			"image": "https://avatars3.githubusercontent.com/u/782268?v=3&s=400",
+			"jobTitle": "Front-end developer",
+			"url": "http://ihor.pavlenko.ninja",
+      "sameAs": "http://my8bit.name/"
+		}
+    </script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.js"></script>
     </head>
     <body>
@@ -62,16 +74,16 @@
         <h2>
           I'm a <span itemprop="jobTitle" style="color: #FD971F; font-style: italic;">JavaScript developer</span> and I <span class="cmn-t-pulse">❤</span> <span style="color: #E6DB74">Internet.</span>
         </h2>
-        <nav>
+        <nav itemtype="http://schema.org/SiteNavigationElement">
           <ul>
             <li>
-              <a href="https://github.com/my8bit" title="Github"><i class="fa fa-2x fa-github"></i></a>
+              <a itemprop="Github" href="https://github.com/my8bit" title="Github"><i class="fa fa-2x fa-github"></i></a>
             </li>
             <li>
-              <a href="https://www.linkedin.com/in/ihorpavlenko"><i class="fa fa-2x fa-linkedin"></i></a>
+              <a itemprop="LinkedIn" href="https://www.linkedin.com/in/ihorpavlenko"><i class="fa fa-2x fa-linkedin"></i></a>
             </li>
             <li>
-              <a href="https://telegram.me/my8bit" title="Telegram"><i class="fa fa-2x fa-telegram"></i></a>
+              <a itemprop="Telegram" href="https://telegram.me/my8bit" title="Telegram"><i class="fa fa-2x fa-telegram"></i></a>
             </li>
           </ul>
         </nav>

@@ -37,10 +37,12 @@
           font-family: Menlo, Monaco, Consolas, 'Courier New', monospace;
           text-shadow: 1px 1px 5px black;
         }
+        ul {
+          padding: 0;
+        }
         li {
           text-decoration: none;
           display: inline;
-          margin: 1em;
         }
         a {
           color: white;
@@ -52,23 +54,10 @@
           text-align: center;
         }
     </style>
-    <script type="application/ld+json">
-		{
-		  "@context": "http://schema.org/",
-		  "@type": "Person",
-		  "name": "Ihor Pavlenko",
-			"email": "info@pavlenko.ninja",
-			"image": "https://avatars3.githubusercontent.com/u/782268?v=3&s=400",
-			"jobTitle": "Front-end developer",
-			"url": "http://ihor.pavlenko.ninja",
-      "sameAs": "http://my8bit.name/",
-      "homeLocation": "Kyiv"
-		}
-    </script>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.js"></script>
     </head>
-    <body>
-      <div id="description" itemscope itemtype="http://schema.org/Person">
+    <body itemscope itemtype="http://schema.org/Person">
+      <div id="description" >
         <h1>
           <span style="color: rgb(249, 38, 114)">Hello, </span>my { <span style="color: rgb(102, 217, 239); font-style: italic; ">nameIs:</span> <span itemprop="name">Ihor Pavlenko</span> }
         </h1>
@@ -78,16 +67,17 @@
         <nav itemtype="http://schema.org/SiteNavigationElement">
           <ul>
             <li>
-              <a itemprop="Github" href="https://github.com/my8bit" title="Github"><i class="fa fa-2x fa-github"></i></a>
+              <a itemprop="sameAs" href="https://github.com/my8bit" title="Github"><i class="fa fa-2x fa-github"></i></a>
             </li>
             <li>
-              <a itemprop="LinkedIn" href="https://www.linkedin.com/in/ihorpavlenko"><i class="fa fa-2x fa-linkedin"></i></a>
+              <a itemprop="sameAs" href="https://www.linkedin.com/in/ihorpavlenko"><i class="fa fa-2x fa-linkedin"></i></a>
             </li>
             <li>
-              <a itemprop="Telegram" href="https://telegram.me/my8bit" title="Telegram"><i class="fa fa-2x fa-telegram"></i></a>
+              <a itemprop="sameAs" href="https://telegram.me/my8bit" title="Telegram"><i class="fa fa-2x fa-telegram"></i></a>
             </li>
           </ul>
         </nav>
+        <small>&#xa9;&nbsp;@my8bit&nbsp;<a itemprop="url" href="http://ihor.pavlenko.ninja">ihor.pavlenko.ninja</a></small>
     </div>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
